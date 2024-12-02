@@ -12,6 +12,7 @@ def index(request):
     price_all = PriceKiko.objects.all()
     offers_all = Offers.objects.all()[:3]
     offers = Offers.objects.all()[3:]
+    gallery_index_all = GalleryIndex.objects.all()
     return  render(request, 'base/index.html', locals())
 
 def about(request):

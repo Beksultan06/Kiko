@@ -34,7 +34,7 @@
 						timestamp: (new Date).valueOf()
 					};
 					sessionStorage.setItem(o, JSON.stringify(t))
-				} catch (e) {}
+				} catch (e) { }
 			}
 
 			function p(e, t, n) {
@@ -52,9 +52,9 @@
 					case "flag":
 						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(
 							e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
-							"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-							"\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-						);
+								"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+								"\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+							);
 					case "emoji":
 						return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
 				}
@@ -63,7 +63,7 @@
 
 			function f(e, t, n) {
 				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(
-						300, 150) : i.createElement("canvas"),
+					300, 150) : i.createElement("canvas"),
 					a = r.getContext("2d", {
 						willReadFrequently: !0
 					}),
@@ -90,25 +90,25 @@
 						var e = JSON.parse(sessionStorage.getItem(o));
 						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e
 							.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-					} catch (e) {}
+					} catch (e) { }
 					return null
 				}();
 				if (!n) {
 					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" !=
 						typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-						var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p
+							var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p
 								.toString()
 							].join(",") + "));",
-							r = new Blob([e], {
-								type: "text/javascript"
-							}),
-							a = new Worker(URL.createObjectURL(r), {
-								name: "wpTestEmojiSupports"
-							});
-						return void(a.onmessage = function (e) {
-							c(n = e.data), a.terminate(), t(n)
-						})
-					} catch (e) {}
+								r = new Blob([e], {
+									type: "text/javascript"
+								}),
+								a = new Worker(URL.createObjectURL(r), {
+									name: "wpTestEmojiSupports"
+								});
+							return void (a.onmessage = function (e) {
+								c(n = e.data), a.terminate(), t(n)
+							})
+						} catch (e) { }
 					c(n = f(s, u, p))
 				}
 				t(n)
@@ -6017,7 +6017,7 @@
 																		data-frame_1="e:power4.inOut;sp:1200;"
 																		data-frame_1_sfx="se:blocktobottom;fxc:#edbf47;"
 																		data-frame_999="o:0;st:w;"
-																		style="z-index:9;font-family:'Open Sans';">{{ settings_id.descriptions|safe }}
+																		style="z-index:9;font-family:'Open Sans';">{{settings_id.descriptions|safe }}
 																	</rs-layer>
 																	<!--
 -->
@@ -6063,8 +6063,10 @@
 								<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-34b0de17"
 									data-id="34b0de17" data-element_type="column"
 									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-									<div class="elementor-widget-wrap elementor-element-populated" style= "background-image: url{{ settings_id.image2.url }};">
-										<div class="elementor-element elementor-element-3930e4fa elementor-widget elementor-widget-spacer" style="background-image: url({{ settings_id.image2.url }});"
+									<div class="elementor-widget-wrap elementor-element-populated"
+										style="background-image: url{{ settings_id.image2.url }};">
+										<div class="elementor-element elementor-element-3930e4fa elementor-widget elementor-widget-spacer"
+											style="background-image: url({{ settings_id.image2.url }});"
 											data-id="3930e4fa" data-element_type="widget"
 											data-widget_type="spacer.default">
 											<div class="elementor-widget-container">
@@ -6098,8 +6100,7 @@
 											data-id="6b7d568a" data-element_type="section">
 											<div class="elementor-container elementor-column-gap-default">
 												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-77a7c22c"
-												style="width: 100%;"
-													data-id="77a7c22c" data-element_type="column">
+													style="width: 100%;" data-id="77a7c22c" data-element_type="column">
 													<div class="elementor-widget-wrap elementor-element-populated">
 														<div class="elementor-element elementor-element-452e50a8 elementor-widget elementor-widget-heading"
 															data-id="452e50a8" data-element_type="widget"
@@ -6186,6 +6187,7 @@
 													<rs-module-wrap id="rev_slider_6_2_wrapper" data-source="gallery"
 														style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 														<rs-module id="rev_slider_6_2" style="" data-version="6.5.7">
+															{% for gallery in gallery_index_all %}
 															<rs-slides>
 																<rs-slide style="position: absolute;" data-key="rs-10"
 																	data-title="Slide" data-in="o:0;"
@@ -6196,16 +6198,12 @@
 																		class="rev-slidebg tp-rs-img rs-lazyload"
 																		data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/transparent.png"
 																		data-no-retina>
-																	<!--
-							-->
 																	<rs-group id="slider-6-slide-10-layer-49"
 																		data-type="group" data-rsp_ch="on"
 																		data-xy="x:10px;" data-text="w:normal;"
 																		data-dim="w:410px;h:400px;" data-frame_0="o:1;"
 																		data-frame_999="o:0;st:w;sA:9000;"
 																		style="z-index:19;background-color:#74cee4;">
-																		<!--
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-47"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:50px;y:300px;"
@@ -6221,9 +6219,6 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-1.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-
-								-->
 																		<h3 id="slider-6-slide-10-layer-50"
 																			class="rs-layer" data-type="text"
 																			data-color="#ffffff" data-rsp_ch="on"
@@ -6231,11 +6226,8 @@
 																			data-text="w:normal;s:33;ls:2px;fw:700;"
 																			data-frame_999="o:0;st:w;"
 																			style="z-index:12;font-family:'Montserrat';">
-																			Hanna Williams
+																			{{ gallery.title2 }}
 																		</h3>
-																		<!--
-
-								-->
 																		<p id="slider-6-slide-10-layer-51"
 																			class="rs-layer" data-type="text"
 																			data-color="#ffffff" data-rsp_ch="on"
@@ -6244,13 +6236,8 @@
 																			data-dim="w:320px;"
 																			data-frame_999="o:0;st:w;"
 																			style="z-index:13;font-family:'Open Sans';">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Mauris pretium dolor sit
-																			amet mi pulvinar
+																			<!-- {{ gallery.descriptions|safe }} -->
 																		</p>
-																		<!--
-
-								-->
 																		<h6 id="slider-6-slide-10-layer-60"
 																			class="rs-layer" data-type="text"
 																			data-color="#ffffff" data-rsp_ch="on"
@@ -6258,11 +6245,8 @@
 																			data-text="w:normal;s:12;l:30;ls:2px;"
 																			data-frame_999="o:0;st:w;"
 																			style="z-index:14;font-family:'Open Sans';">
-																			SCHOOL PRINCIPAL
+																			{{ gallery.title }}
 																		</h6>
-																		<!--
-
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-62"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:100px;y:300px;"
@@ -6278,9 +6262,6 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-3.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-63"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:150px;y:300px;"
@@ -6296,9 +6277,6 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-4.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-64"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:200px;y:300px;"
@@ -6314,20 +6292,13 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-5.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-							-->
 																	</rs-group>
-																	<!--
-
-							-->
 																	<rs-group id="slider-6-slide-10-layer-66"
 																		data-type="group" data-rsp_ch="on"
 																		data-xy="x:r;y:b;" data-text="w:normal;"
 																		data-dim="w:410px;h:400px;" data-frame_0="o:1;"
 																		data-frame_999="o:0;st:w;sA:9000;"
 																		style="z-index:27;background-color:#edbf47;">
-																		<!--
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-67"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:50px;y:300px;"
@@ -6343,9 +6314,6 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-1.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-
-								-->
 																		<h3 id="slider-6-slide-10-layer-68"
 																			class="rs-layer" data-type="text"
 																			data-color="#ffffff" data-rsp_ch="on"
@@ -6353,11 +6321,8 @@
 																			data-text="w:normal;s:33;ls:2px;fw:700;"
 																			data-frame_999="o:0;st:w;"
 																			style="z-index:20;font-family:'Montserrat';">
-																			Andrew Taylor
+																			{{ gallery.title2_1 }}
 																		</h3>
-																		<!--
-
-								-->
 																		<p id="slider-6-slide-10-layer-69"
 																			class="rs-layer" data-type="text"
 																			data-color="#ffffff" data-rsp_ch="on"
@@ -6366,13 +6331,8 @@
 																			data-dim="w:320px;"
 																			data-frame_999="o:0;st:w;"
 																			style="z-index:5;font-family:'Open Sans';">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Mauris pretium dolor sit
-																			amet mi pulvinar
+																			<!-- {{ gallery.descriptions2|safe }} -->
 																		</p>
-																		<!--
-
-								-->
 																		<h6 id="slider-6-slide-10-layer-70"
 																			class="rs-layer" data-type="text"
 																			data-color="#ffffff" data-rsp_ch="on"
@@ -6380,11 +6340,8 @@
 																			data-text="w:normal;s:12;l:30;ls:2px;"
 																			data-frame_999="o:0;st:w;"
 																			style="z-index:22;font-family:'Open Sans';">
-																			REFERENCE TEACHER
+																			{{ gallery.title2_2 }}
 																		</h6>
-																		<!--
-
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-71"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:100px;y:300px;"
@@ -6400,9 +6357,6 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-3.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-72"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:150px;y:300px;"
@@ -6418,9 +6372,6 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-4.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-
-								-->
 																		<rs-layer id="slider-6-slide-10-layer-73"
 																			data-type="image" data-rsp_ch="on"
 																			data-xy="x:200px;y:300px;"
@@ -6436,464 +6387,50 @@
 																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-5.png"
 																				data-no-retina>
 																		</rs-layer>
-																		<!--
-							-->
 																	</rs-group>
-																	<!--
-
-							-->
 																	<rs-layer id="slider-6-slide-10-layer-1"
 																		data-type="shape" data-rsp_ch="on"
 																		data-xy="x:10px;y:b;" data-text="w:normal;"
 																		data-dim="w:400px;h:400px;"
 																		data-frame_999="o:0;st:w;" style="z-index:11;">
 																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/revslider/Home-slide/bg-13-1.jpg') no-repeat left center; background-size: cover;">
+																			style="background: url('{{ gallery.image1.url }}') no-repeat left center; background-size: cover;">
 																		</rs-bg-elem>
 
 																	</rs-layer>
-																	<!--
-
-							-->
 																	<rs-layer id="slider-6-slide-10-layer-48"
 																		data-type="shape" data-rsp_ch="on"
 																		data-xy="x:430px;y:b;" data-text="w:normal;"
 																		data-dim="w:400px;h:400px;"
 																		data-frame_999="o:0;st:w;" style="z-index:10;">
 																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/shop-05.jpg') no-repeat right center; background-size: cover;">
+																			style="background: url('{{ gallery.image2.url }}') no-repeat right center; background-size: cover;">
 																		</rs-bg-elem>
 
 																	</rs-layer>
-																	<!--
-
-							-->
 																	<rs-layer id="slider-6-slide-10-layer-56"
 																		data-type="shape" data-rsp_ch="on"
 																		data-xy="x:420px;" data-text="w:normal;"
 																		data-dim="w:410px;h:400px;"
 																		data-frame_999="o:0;st:w;" style="z-index:9;">
 																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-17.jpg') no-repeat center center; background-size: cover;">
+																			style="background: url('{{ gallery.image3.url }}') no-repeat center center; background-size: cover;">
 																		</rs-bg-elem>
 
 																	</rs-layer>
-																	<!--
-
-							-->
 																	<rs-layer id="slider-6-slide-10-layer-57"
 																		data-type="shape" data-rsp_ch="on"
 																		data-xy="x:r;xo:11px;" data-text="w:normal;"
 																		data-dim="w:400px;h:400px;"
 																		data-frame_999="o:0;st:w;" style="z-index:8;">
 																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/20-paral.jpeg') no-repeat left center; background-size: cover;">
+																			style="background: url('{{ gallery.image4.url }}') no-repeat left center; background-size: cover;">
 																		</rs-bg-elem>
 
 																	</rs-layer>
-																	<!--
--->
-																</rs-slide>
-																<rs-slide style="position: absolute;" data-key="rs-11"
-																	data-title="Slide" data-in="o:0;"
-																	data-out="a:false;">
-																	<img decoding="async"
-																		src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																		alt="Slide" title="Home 1"
-																		class="rev-slidebg tp-rs-img rs-lazyload"
-																		data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/transparent.png"
-																		data-no-retina>
-																	<!--
-							-->
-																	<rs-group id="slider-6-slide-11-layer-66"
-																		data-type="group" data-rsp_ch="on"
-																		data-xy="x:r;y:b;yo:-1px;" data-text="w:normal;"
-																		data-dim="w:410px;h:400px;" data-frame_0="o:1;"
-																		data-frame_999="o:0;st:w;sA:9000;"
-																		style="z-index:20;background-color:#6fc191;">
-																		<!--
-								-->
-																		<rs-layer id="slider-6-slide-11-layer-67"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:50px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:16;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="twitter"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-1.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-
-								-->
-																		<h3 id="slider-6-slide-11-layer-68"
-																			class="rs-layer" data-type="text"
-																			data-color="#ffffff" data-rsp_ch="on"
-																			data-xy="x:40px;y:127px;"
-																			data-text="w:normal;s:33;ls:2px;fw:700;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:13;font-family:'Montserrat';">
-																			Aysha Clark
-																		</h3>
-																		<!--
-
-								-->
-																		<p id="slider-6-slide-11-layer-69"
-																			class="rs-layer" data-type="text"
-																			data-color="#ffffff" data-rsp_ch="on"
-																			data-xy="x:39px;y:171px;"
-																			data-text="w:normal;s:15;l:30;ls:1px;"
-																			data-dim="w:320px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:14;font-family:'Open Sans';">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Mauris pretium dolor sit
-																			amet mi pulvinar
-																		</p>
-																		<!--
-
-								-->
-																		<h6 id="slider-6-slide-11-layer-70"
-																			class="rs-layer" data-type="text"
-																			data-color="#ffffff" data-rsp_ch="on"
-																			data-xy="x:40px;y:81px;"
-																			data-text="w:normal;s:12;l:30;ls:2px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:15;font-family:'Open Sans';">
-																			REFERENCE TEACHER
-																		</h6>
-																		<!--
-
-								-->
-																		<rs-layer id="slider-6-slide-11-layer-71"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:100px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:17;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="linkedin"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-3.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-
-								-->
-																		<rs-layer id="slider-6-slide-11-layer-72"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:150px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:18;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="facebook"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-4.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-
-								-->
-																		<rs-layer id="slider-6-slide-11-layer-73"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:200px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:19;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="skype"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-5.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-							-->
-																	</rs-group>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-11-layer-1"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="y:b;" data-text="w:normal;"
-																		data-dim="w:410px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:12;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-38.jpeg') no-repeat center top; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-11-layer-48"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:430px;y:b;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:11;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/shop-07.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-11-layer-56"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:430px;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;"
-																		style="z-index:10;background-color:#f1a822;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/05/shop-02.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-11-layer-57"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:r;xo:10px;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:8;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/05/shop-03.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-11-layer-75"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:10px;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;"
-																		style="z-index:9;background-color:#f1a822;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/05/shop-04.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
--->
-																</rs-slide>
-																<rs-slide style="position: absolute;" data-key="rs-12"
-																	data-title="Slide" data-in="o:0;"
-																	data-out="a:false;">
-																	<img decoding="async"
-																		src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																		alt="Slide" title="Home 1"
-																		class="rev-slidebg tp-rs-img rs-lazyload"
-																		data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/transparent.png"
-																		data-no-retina>
-																	<!--
-							-->
-																	<rs-group id="slider-6-slide-12-layer-49"
-																		data-type="group" data-rsp_ch="on"
-																		data-xy="x:10px;" data-text="w:normal;"
-																		data-dim="w:410px;h:400px;" data-frame_0="o:1;"
-																		data-frame_999="o:0;st:w;sA:9000;"
-																		style="z-index:20;background-color:#c489ce;">
-																		<!--
-								-->
-																		<rs-layer id="slider-6-slide-12-layer-47"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:50px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:16;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="twitter"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-1.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-
-								-->
-																		<h3 id="slider-6-slide-12-layer-50"
-																			class="rs-layer" data-type="text"
-																			data-color="#ffffff" data-rsp_ch="on"
-																			data-xy="x:40px;y:127px;"
-																			data-text="w:normal;s:33;ls:2px;fw:700;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:13;font-family:'Montserrat';">
-																			Freya Scott
-																		</h3>
-																		<!--
-
-								-->
-																		<p id="slider-6-slide-12-layer-51"
-																			class="rs-layer" data-type="text"
-																			data-color="#ffffff" data-rsp_ch="on"
-																			data-xy="x:39px;y:171px;"
-																			data-text="w:normal;s:15;l:30;ls:1px;"
-																			data-dim="w:320px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:14;font-family:'Open Sans';">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Mauris pretium dolor sit
-																			amet mi pulvinar
-																		</p>
-																		<!--
-
-								-->
-																		<h6 id="slider-6-slide-12-layer-60"
-																			class="rs-layer" data-type="text"
-																			data-color="#ffffff" data-rsp_ch="on"
-																			data-xy="x:40px;y:81px;"
-																			data-text="w:normal;s:12;l:30;ls:2px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:15;font-family:'Open Sans';">
-																			REFERENCE TEACHER
-																		</h6>
-																		<!--
-
-								-->
-																		<rs-layer id="slider-6-slide-12-layer-62"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:100px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:17;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="linkedin"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-3.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-
-								-->
-																		<rs-layer id="slider-6-slide-12-layer-63"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:150px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:18;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="facebook"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-4.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-
-								-->
-																		<rs-layer id="slider-6-slide-12-layer-64"
-																			data-type="image" data-rsp_ch="on"
-																			data-xy="x:200px;y:300px;"
-																			data-text="w:normal;"
-																			data-dim="w:20px;h:20px;"
-																			data-frame_999="o:0;st:w;"
-																			style="z-index:19;"><img loading="lazy"
-																				decoding="async"
-																				src="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/revslider/public/assets/assets/dummy.png"
-																				alt="skype"
-																				class="tp-rs-img rs-lazyload"
-																				width="100" height="100"
-																				data-lazyload="//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/03/social-white-5.png"
-																				data-no-retina>
-																		</rs-layer>
-																		<!--
-							-->
-																	</rs-group>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-12-layer-1"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="y:b;" data-text="w:normal;"
-																		data-dim="w:410px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:12;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/23-paral.jpeg') no-repeat right bottom; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-12-layer-48"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:430px;y:b;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;"
-																		style="z-index:11;background-color:#f1a822;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-20.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-12-layer-56"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:420px;" data-text="w:normal;"
-																		data-dim="w:410px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:9;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-38.jpeg') no-repeat center top; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-12-layer-57"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:r;xo:10px;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:8;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-21.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
-
-							-->
-																	<rs-layer id="slider-6-slide-12-layer-74"
-																		data-type="shape" data-rsp_ch="on"
-																		data-xy="x:r;xo:10px;y:b;" data-text="w:normal;"
-																		data-dim="w:400px;h:400px;"
-																		data-frame_999="o:0;st:w;" style="z-index:10;">
-																		<rs-bg-elem
-																			style="background: url('//www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-19.jpg') no-repeat center center; background-size: cover;">
-																		</rs-bg-elem>
-
-																	</rs-layer>
-																	<!--
--->
 																</rs-slide>
 															</rs-slides>
+															{% endfor %}
 														</rs-module>
 														<script type="text/javascript">
 															setREVStartSize({
@@ -6976,14 +6513,11 @@
 															data-widget_type="image.default">
 															<div class="elementor-widget-container">
 																<img loading="lazy" decoding="async" width="555"
-																	height="953"
-																	src="{{ settings_id.image3.url }}"
+																	height="953" src="{{ settings_id.image3.url }}"
 																	class="attachment-large size-large wp-image-5551"
-																	alt=""
-																	srcset="{{ settings_id.image3.url }} 555w,
+																	alt="" srcset="{{ settings_id.image3.url }} 555w,
 																	{{ settings_id.image3.url }}
-																	175w"
-																	sizes="(max-width: 555px) 100vw, 555px" />
+																	175w" sizes="(max-width: 555px) 100vw, 555px" />
 															</div>
 														</div>
 													</div>
@@ -7078,14 +6612,11 @@
 															data-widget_type="image.default">
 															<div class="elementor-widget-container">
 																<img loading="lazy" decoding="async" width="555"
-																	height="953"
-																	src="{{ settings_id.image4.url }}"
+																	height="953" src="{{ settings_id.image4.url }}"
 																	class="attachment-full size-full wp-image-5552"
-																	alt=""
-																	srcset="{{ settings_id.image4.url }} 555w,
+																	alt="" srcset="{{ settings_id.image4.url }} 555w,
 																	{{ settings_id.image4.url }}
-																	175w"
-																	sizes="(max-width: 555px) 100vw, 555px" />
+																	175w" sizes="(max-width: 555px) 100vw, 555px" />
 															</div>
 														</div>
 													</div>
@@ -7108,8 +6639,7 @@
 																	<figure class="elementor-image-box-img"><a href="#"
 																			tabindex="-1"><img loading="lazy"
 																				decoding="async" width="150"
-																				height="150"
-																				src="{{ kiko.image.url }}"
+																				height="150" src="{{ kiko.image.url }}"
 																				class="attachment-thumbnail size-thumbnail wp-image-4945"
 																				alt=""
 																				srcset="{{ kiko.image.url }} 150w, {{ kiko.image.url }} 100w, {{ kiko.image.url }} 190w"
@@ -7118,7 +6648,7 @@
 																	<div class="elementor-image-box-content">
 																		<h3 class="elementor-image-box-title"><a
 																				href="#"> {{ kiko.title }}</a></h3>
-																		<p class="elementor-image-box-description">{{ kiko.descriptions|safe }}</p>
+																		<p class="elementor-image-box-description">{{kiko.descriptions|safe }}</p>
 																	</div>
 																</div>
 															</div>
@@ -7132,12 +6662,11 @@
 								</div>
 							</div>
 						</section>
-						<section
-							class="elementor-section elementor-top-section elementor-element elementor-element-330b34fe 
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-330b34fe 
 							elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default 
 							elementor-section-height-default elementor-section elementor-top-section elementor-element elementor-element-330b34fe 
 							elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default 
-							elementor-section-height-default "style="background-image: url({{ settings_id.image5.url }});"
+							elementor-section-height-default " style="background-image: url({{ settings_id.image5.url }});"
 							data-id="330b34fe" data-element_type="section"
 							data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
 							<div class="elementor-background-overlay"></div>
@@ -7150,14 +6679,14 @@
 											data-id="d8c8dc0" data-element_type="widget"
 											data-widget_type="heading.default">
 											<div class="elementor-widget-container">
-												<h3 class="elementor-heading-title elementor-size-default">{{ settings_id.title_available }}</h3>
+												<h3 class="elementor-heading-title elementor-size-default">{{settings_id.title_available }}</h3>
 											</div>
 										</div>
 										<div class="elementor-element elementor-element-e1aebe7 elementor-widget elementor-widget-heading"
 											data-id="e1aebe7" data-element_type="widget"
 											data-widget_type="heading.default">
 											<div class="elementor-widget-container">
-												<h1 class="elementor-heading-title elementor-size-default">{{ settings_id.title_price }}</h1>
+												<h1 class="elementor-heading-title elementor-size-default">{{settings_id.title_price }}</h1>
 											</div>
 										</div>
 										<section
@@ -7168,7 +6697,8 @@
 												<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2496072 elementor-invisible"
 													data-id="2496072" data-element_type="column"
 													data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;zoomIn&quot;}">
-													<div class="elementor-widget-wrap elementor-element-populated"  style="background-image: url({{ price.image.url }});">
+													<div class="elementor-widget-wrap elementor-element-populated"
+														style="background-image: url({{ price.image.url }});">
 														<div class="elementor-background-overlay"></div>
 														<div class="elementor-element elementor-element-63c5c107 elementor-widget elementor-widget-heading"
 															data-id="63c5c107" data-element_type="widget"
@@ -7194,7 +6724,7 @@
 															<div class="elementor-widget-container">
 																<ul class="elementor-icon-list-items">
 																	<li class="elementor-icon-list-item">
-																		<span class="elementor-icon-list-text">{{ price.descriptions|safe }}</span>
+																		<span class="elementor-icon-list-text">{{price.descriptions|safe }}</span>
 																	</li>
 																</ul>
 															</div>
@@ -7208,26 +6738,25 @@
 																	<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-bounce-in"
 																		href="#">
 																		<span class="elementor-button-content-wrapper">
-																			<span
-																				class="elementor-button-text">{{ price.details }}</span>
+																			<span class="elementor-button-text">{{price.details }}</span>
 																		</span>
 																	</a>
 																	{% endif %}
 																	{% if price.icon == 'География' %}
 																	<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-bounce-in"
-                                  									  href="#">
-                                  									  <span class="elementor-button-content-wrapper">
-                                  									    <span class="elementor-button-text">{{ price.details }}</span>
-                                  									  </span>
-                                  									</a>
+																		href="#">
+																		<span class="elementor-button-content-wrapper">
+																			<span class="elementor-button-text">{{price.details }}</span>
+																		</span>
+																	</a>
 																	{% endif %}
 																	{% if price.icon == 'Письмо' %}
 																	<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-bounce-in"
-                                  									  href="#">
-                                  									  <span class="elementor-button-content-wrapper">
-                                  									    <span class="elementor-button-text">{{ price.details }}</span>
-                                  									  </span>
-                                  									</a>
+																		href="#">
+																		<span class="elementor-button-content-wrapper">
+																			<span class="elementor-button-text">{{price.details }}</span>
+																		</span>
+																	</a>
 																	{% endif %}
 																</div>
 															</div>
@@ -7253,7 +6782,7 @@
 											data-id="89f3ae6" data-element_type="widget"
 											data-widget_type="heading.default">
 											<div class="elementor-widget-container">
-												<h3 class="elementor-heading-title elementor-size-default">{{ settings_id.title_suggestion }}
+												<h3 class="elementor-heading-title elementor-size-default">{{settings_id.title_suggestion }}
 												</h3>
 											</div>
 										</div>
@@ -7261,7 +6790,7 @@
 											data-id="5e467218" data-element_type="widget"
 											data-widget_type="heading.default">
 											<div class="elementor-widget-container">
-												<h1 class="elementor-heading-title elementor-size-default">{{ settings_id.title_events }}</h1>
+												<h1 class="elementor-heading-title elementor-size-default">{{settings_id.title_events }}</h1>
 											</div>
 										</div>
 										<section
@@ -7277,8 +6806,7 @@
 															data-widget_type="image.default">
 															<div class="elementor-widget-container">
 																<img loading="lazy" decoding="async" width="190"
-																	height="190"
-																	src="{{ kiko.image.url }}"
+																	height="190" src="{{ kiko.image.url }}"
 																	class="attachment-full size-full wp-image-4946"
 																	alt=""
 																	srcset="{{ kiko.image.url }} 190w, {{ kiko.image.url }} 150w, {{ kiko.image.url }} 100w"
@@ -7303,1531 +6831,7 @@
 								</div>
 							</div>
 						</section>
-						<section
-							class="elementor-section elementor-top-section elementor-element elementor-element-24501c7b elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-							data-id="24501c7b" data-element_type="section"
-							data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1398d071"
-									data-id="1398d071" data-element_type="column"
-									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-background-overlay"></div>
-										<div class="elementor-element elementor-element-2f35b7d1 elementor-align-right elementor-widget elementor-widget-button"
-											data-id="2f35b7d1" data-element_type="widget"
-											data-widget_type="button.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-button-wrapper">
-													<a class="elementor-button elementor-button-link elementor-size-sm"
-														href="#">
-														<span class="elementor-button-content-wrapper">
-															<span class="elementor-button-text">34 $</span>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-48090172 elementor-widget elementor-widget-spacer"
-											data-id="48090172" data-element_type="widget"
-											data-widget_type="spacer.default">
-											<div class="elementor-widget-container">
-												<div class="elementor-spacer">
-													<div class="elementor-spacer-inner"></div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-1e279520 elementor-widget elementor-widget-heading"
-											data-id="1e279520" data-element_type="widget"
-											data-widget_type="heading.default">
-											<div class="elementor-widget-container">
-												<h1 class="elementor-heading-title elementor-size-default">English
-													Course</h1>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-1b59164c elementor-widget elementor-widget-heading"
-											data-id="1b59164c" data-element_type="widget"
-											data-widget_type="heading.default">
-											<div class="elementor-widget-container">
-												<p class="elementor-heading-title elementor-size-default">Lorem ipsum
-													dolor sit amet, consectetur adipiscing elit. Duis porttitor tellus
-													vel mauris scelerisque accumsan. </p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-58ca1654"
-									data-id="58ca1654" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<section
-											class="elementor-section elementor-inner-section elementor-element elementor-element-79d20e2e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-											data-id="79d20e2e" data-element_type="section">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3fc9c26f"
-													data-id="3fc9c26f" data-element_type="column"
-													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-26641e0c elementor-widget elementor-widget-heading"
-															data-id="26641e0c" data-element_type="widget"
-															data-widget_type="heading.default">
-															<div class="elementor-widget-container">
-																<h2
-																	class="elementor-heading-title elementor-size-default">
-																	FLASH SALE !</h2>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-3224815f elementor-widget elementor-widget-spacer"
-															data-id="3224815f" data-element_type="widget"
-															data-widget_type="spacer.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-spacer">
-																	<div class="elementor-spacer-inner"></div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5f21accb"
-													data-id="5f21accb" data-element_type="column"
-													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-29d4b0c7 elementor-widget elementor-widget-spacer"
-															data-id="29d4b0c7" data-element_type="widget"
-															data-widget_type="spacer.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-spacer">
-																	<div class="elementor-spacer-inner"></div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section
-											class="elementor-section elementor-inner-section elementor-element elementor-element-57b30e67 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-											data-id="57b30e67" data-element_type="section">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2e1f3088"
-													data-id="2e1f3088" data-element_type="column"
-													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-background-overlay"></div>
-														<div class="elementor-element elementor-element-7e12f59c elementor-widget elementor-widget-spacer"
-															data-id="7e12f59c" data-element_type="widget"
-															data-widget_type="spacer.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-spacer">
-																	<div class="elementor-spacer-inner"></div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-2d00613b elementor-widget elementor-widget-heading"
-															data-id="2d00613b" data-element_type="widget"
-															data-widget_type="heading.default">
-															<div class="elementor-widget-container">
-																<h4
-																	class="elementor-heading-title elementor-size-default">
-																	HAPPY SCHOOL</h4>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-85bf557"
-													data-id="85bf557" data-element_type="column"
-													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-788213cf elementor-widget elementor-widget-heading"
-															data-id="788213cf" data-element_type="widget"
-															data-widget_type="heading.default">
-															<div class="elementor-widget-container">
-																<h4
-																	class="elementor-heading-title elementor-size-default">
-																	Online list of new exams </h4>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-3c391d6f elementor-widget elementor-widget-spacer"
-															data-id="3c391d6f" data-element_type="widget"
-															data-widget_type="spacer.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-spacer">
-																	<div class="elementor-spacer-inner"></div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-47290423 elementor-align-right elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-															data-id="47290423" data-element_type="widget"
-															data-widget_type="icon-list.default">
-															<div class="elementor-widget-container">
-																<ul class="elementor-icon-list-items">
-																	<li class="elementor-icon-list-item">
-																		<span class="elementor-icon-list-text">1.
-																			REGISTER</span>
-																	</li>
-																	<li class="elementor-icon-list-item">
-																		<span class="elementor-icon-list-text">2.
-																			WRITE</span>
-																	</li>
-																	<li class="elementor-icon-list-item">
-																		<span class="elementor-icon-list-text">3. FILL
-																			IT</span>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</section>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section
-							class="elementor-section elementor-top-section elementor-element 
-							elementor-element-ba95dfb elementor-section-stretched elementor-section-boxed 
-							elementor-section-height-default elementor-section-height-default" style="background-image: url({{ settings_id.image6.url }});"
-							data-id="ba95dfb" data-element_type="section"
-							data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9dc7e68"
-									data-id="9dc7e68" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
-										<div class="elementor-element elementor-element-e7823d8 elementor-widget elementor-widget-heading"
-											data-id="e7823d8" data-element_type="widget"
-											data-widget_type="heading.default">
-											<div class="elementor-widget-container">
-												<h3 class="elementor-heading-title elementor-size-default">{{ settings_id.title_recommendations }}</h3>
-											</div>
-										</div>
-										<div class="elementor-element elementor-element-7f29de0 elementor-widget elementor-widget-heading"
-											data-id="7f29de0" data-element_type="widget"
-											data-widget_type="heading.default">
-											<div class="elementor-widget-container">
-												<h1 class="elementor-heading-title elementor-size-default">{{ settings_id.title_study }}</h1>
-											</div>
-										</div>
-										<section
-											class="elementor-section elementor-inner-section elementor-element elementor-element-26624b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-											data-id="26624b7" data-element_type="section"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
-											<div class="elementor-background-overlay"></div>
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-31445ad"
-													data-id="31445ad" data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-22bcda6 elementor-widget elementor-widget-shortcode"
-															data-id="22bcda6" data-element_type="widget"
-															data-widget_type="shortcode.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-shortcode">
-																	<style>
-																		/*General*/
-																		.nd_cc_section_cc {
-																			float: left;
-																			margin-bottom: 20px;
-																			padding: 0px;
-																			box-sizing: border-box;
-																		}
 
-																		.nd_cc_section_name,
-																		.nd_cc_section_description {
-																			padding-left: 15px;
-																		}
-
-																		.nd_cc_sub_section_cc {
-																			float: left;
-																			margin-bottom: 20px;
-																			padding: 15px;
-																			box-sizing: border-box;
-																		}
-
-																		.nd_cc_sub_section_name {
-																			margin-bottom: 10px;
-																		}
-
-
-																		/*Price section*/
-																		#nd_cc_section_price_1789 {
-																			float: left;
-																			width: 100%;
-																			margin-bottom: 20px;
-																			padding: 15px;
-																			box-sizing: border-box;
-																			position: relative;
-																			text-align: right;
-																		}
-
-																		#nd_cc_section_price_1789 .nd_cc_cc_icon_price {
-																			width: 80px;
-																			position: absolute;
-																			left: 15px;
-																			top: 10px;
-																		}
-
-																		#nd_cc_section_price_1789 h1 {
-																			font-size: 50px;
-																			line-height: 50px;
-																			color: #74cee4;
-																		}
-
-																		#nd_cc_section_price_1789 p {
-																			font-size: 14px;
-																			line-height: 14px;
-																			margin-top: 10px;
-																		}
-
-
-
-
-
-																		/*Slider*/
-																		.nd_cc_slider_1789 {
-																			float: left;
-																			width: 100%;
-																			position: relative;
-																			height: 5px;
-																			background-color: #f1f1f1;
-																			margin: 20px 0px;
-																		}
-
-																		.nd_cc_slider_handle_1789 {
-																			width: 52px;
-																			height: 30px;
-																			top: 0px;
-																			margin-top: -13px;
-																			text-align: center;
-																			line-height: 31px;
-																			position: absolute;
-																			background-color: #74cee4;
-																			color: #fff;
-																			cursor: pointer;
-																			font-size: 13px;
-																		}
-
-
-																		/*switch*/
-																		#nd_cc_cc_1789 .nd_cc_switch_active p {
-																			background-color: #fff;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_switch_active {
-																			cursor: initial !important;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_switch_off,
-																		#nd_cc_cc_1789 .nd_cc_switch_on {
-																			cursor: pointer;
-																		}
-
-																		.nd_cc_switch_content_1789.nd_cc_switch_content_active .nd_cc_switch_off p {
-																			color: #fff;
-																		}
-
-																		.nd_cc_switch_content_1789 {
-																			float: left;
-																			background-color: #f1f1f1;
-																			width: 220px;
-																			text-align: center;
-																			padding: 5px;
-																		}
-
-																		.nd_cc_switch_content_1789 p {
-																			font-size: 14px;
-																			line-height: 14px;
-																			padding: 10px;
-																		}
-
-																		.nd_cc_switch_content_1789.nd_cc_switch_content_active {
-																			background-color: #74cee4;
-																		}
-
-
-																		/*tag*/
-																		#nd_cc_cc_1789 .nd_cc_tag_default {
-																			border: 1px solid #f1f1f1;
-																			padding: 14px 20px;
-																			margin-right: 20px;
-																			cursor: pointer;
-																			font-size: 14px;
-																			line-height: 14px;
-																			display: inline-block;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_tag_active {
-																			background-color: #74cee4;
-																			border: 1px solid #74cee4;
-																			color: #fff;
-																		}
-
-																		.nd_cc_tag_price {
-																			display: none;
-																		}
-
-
-																		/*select*/
-																		#nd_cc_cc_1789 .nd_cc_select_active {}
-
-																		#nd_cc_cc_1789 .nd_cc_select_li_icon {
-																			width: 40px;
-																			position: absolute;
-																			left: 20px;
-																			top: 14px;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul {
-																			margin: 0px;
-																			padding: 0px;
-																			position: relative;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul>li {
-																			border: 1px solid #f1f1f1;
-																			padding: 14px 20px;
-																			box-sizing: border-box;
-																			position: relative;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul>li p {
-																			font-size: 14px;
-																			line-height: 14px;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul>li {
-																			display: none;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul .nd_cc_select_active {
-																			display: block;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_sub_menu {
-																			display: none;
-																			position: absolute;
-																			top: 0px;
-																			left: 0px;
-																			margin: 0px;
-																			padding: 0px;
-																			list-style: none;
-																			background-color: #fff;
-																			cursor: pointer;
-																			min-width: 300px;
-																			width: 100%;
-																			z-index: 9;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_sub_menu li {
-																			border: 1px solid #f1f1f1;
-																			border-top-width: 0px;
-																			padding: 14px 20px;
-																			box-sizing: border-box;
-																			position: relative;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_sub_menu li:first-child {
-																			border-top: 1px solid #f1f1f1;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_sub_menu li p {
-																			font-size: 14px;
-																			line-height: 14px;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_arrow {
-																			width: 15px;
-																			right: 20px;
-																			position: absolute;
-																			top: 15px;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul h5 {
-																			font-size: 12px;
-																			line-height: 12px;
-																			margin-top: 10px;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_ul p.nd_cc_select_name {
-																			margin-top: 3px;
-																		}
-
-																		#nd_cc_cc_1789 .nd_cc_select_price {
-																			display: none;
-																		}
-																	</style>
-
-																	<div id="nd_cc_cc_1789" class="nd_cc_section">
-
-																		<script>
-																			function nd_cc_get_total_price(nd_cc_cc_id, nd_cc_cc_min_price) {
-
-																				var nd_cc_cc_id = nd_cc_cc_id;
-																				var nd_cc_cc_min_price = nd_cc_cc_min_price;
-
-																				jQuery("#nd_cc_cc_" + nd_cc_cc_id + " .nd_cc_cc_total_price").empty();
-
-																				var map = {};
-																				jQuery(".nd_cc_cc_" + nd_cc_cc_id + "_value_price").each(function () {
-																					map[jQuery(this).attr("name")] = jQuery(this).val();
-																				});
-
-																				var nd_cc_total_price = nd_cc_cc_min_price;
-																				jQuery.each(map, function (key, value) {
-
-																					nd_cc_total_price = nd_cc_total_price + parseInt(value);
-																				})
-
-																				jQuery("#nd_cc_cc_" + nd_cc_cc_id + " .nd_cc_cc_total_price").append(nd_cc_total_price);
-
-																			}
-																		</script>
-
-																		<div id="nd_cc_section_1" style="width:100%;"
-																			class="nd_cc_section_cc">
-
-
-
-
-
-																			<div id="nd_cc_sub_section_1_1"
-																				class="nd_cc_sub_section_cc nd_cc_width_100_percentage_important_responsive "
-																				style="width:50%;">
-
-																				<p
-																					class="nd_options_color_greydark nd_cc_sub_section_name">
-																					Number of children</p>
-
-
-																				<script>
-																					jQuery(function () {
-																						var handle = jQuery("#nd_cc_cc_1789 #nd_cc_custom_handle_1_1");
-																						jQuery("#nd_cc_cc_1789 #nd_cc_slider_1_1").slider({
-																							min: 0,
-																							max: 20,
-																							value: 10,
-																							create: function () {
-																								handle.text(jQuery(this).slider("value"));
-																								nd_cc_get_total_price(1789, 10);
-																							},
-																							slide: function (event, ui) {
-																								handle.text(ui.value);
-																								var nd_cc_default_slider_price = 5 * ui.value;
-																								jQuery(".nd_cc_current_price_1_1").val(nd_cc_default_slider_price);
-																								nd_cc_get_total_price(1789, 10);
-																							}
-																						});
-																					});
-																				</script>
-
-
-																				<div class="nd_cc_slider_1789"
-																					id="nd_cc_slider_1_1">
-																					<div id="nd_cc_custom_handle_1_1"
-																						class="ui-slider-handle  nd_cc_slider_handle_1789 ">
-																					</div>
-																					<input
-																						class=" nd_cc_cc_1789_value_price nd_cc_current_price_1_1"
-																						name="nd_cc_current_price_1_1"
-																						type="hidden" readonly
-																						value="50">
-																				</div>
-
-
-
-
-
-																			</div>
-
-																			<div id="nd_cc_sub_section_1_2"
-																				class="nd_cc_sub_section_cc nd_cc_width_100_percentage_important_responsive "
-																				style="width:50%;">
-
-																				<p
-																					class="nd_options_color_greydark nd_cc_sub_section_name">
-																					Laboratories</p>
-
-
-																				<script>
-																					jQuery(function () {
-																						var handle = jQuery("#nd_cc_cc_1789 #nd_cc_custom_handle_1_2");
-																						jQuery("#nd_cc_cc_1789 #nd_cc_slider_1_2").slider({
-																							min: 0,
-																							max: 10,
-																							value: 5,
-																							create: function () {
-																								handle.text(jQuery(this).slider("value"));
-																								nd_cc_get_total_price(1789, 10);
-																							},
-																							slide: function (event, ui) {
-																								handle.text(ui.value);
-																								var nd_cc_default_slider_price = 2 * ui.value;
-																								jQuery(".nd_cc_current_price_1_2").val(nd_cc_default_slider_price);
-																								nd_cc_get_total_price(1789, 10);
-																							}
-																						});
-																					});
-																				</script>
-
-
-																				<div class="nd_cc_slider_1789"
-																					id="nd_cc_slider_1_2">
-																					<div id="nd_cc_custom_handle_1_2"
-																						class="ui-slider-handle  nd_cc_slider_handle_1789 ">
-																					</div>
-																					<input
-																						class=" nd_cc_cc_1789_value_price nd_cc_current_price_1_2"
-																						name="nd_cc_current_price_1_2"
-																						type="hidden" readonly
-																						value="10">
-																				</div>
-
-
-
-
-
-																			</div>
-
-																		</div>
-
-																		<div id="nd_cc_section_2" style="width:100%;"
-																			class="nd_cc_section_cc">
-
-
-
-
-
-																			<div id="nd_cc_sub_section_2_1"
-																				class="nd_cc_sub_section_cc nd_cc_width_100_percentage_important_responsive "
-																				style="width:33%;">
-
-																				<p
-																					class="nd_options_color_greydark nd_cc_sub_section_name">
-																					Type of course</p>
-
-
-																				<script>
-																					jQuery(function () {
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_sub_menu li ").click(
-																							function () {
-
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_ul li")
-																									.removeClass("nd_cc_select_active");
-																								var nd_cc_select_data_position_first = jQuery(this).attr("data-position");
-																								var nd_cc_select_data_position = parseInt(
-																									nd_cc_select_data_position_first) + 1;
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_ul > li:nth-child(" +
-																									nd_cc_select_data_position + ")").addClass("nd_cc_select_active");
-
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_sub_menu")
-																									.removeClass("nd_cc_display_block_important");
-
-
-																								var nd_cc_select_price = jQuery(this).attr("data-price");
-																								jQuery("#nd_cc_cc_1789 .nd_cc_current_price_2_1").val(nd_cc_select_price);
-																								nd_cc_get_total_price(1789, 10);
-
-
-																							});
-
-																						jQuery(
-																								"#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_ul li.nd_cc_select_active"
-																								)
-																							.click(function () {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_sub_menu")
-																									.addClass("nd_cc_display_block_important");
-																							});
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_ul")
-																							.mouseenter(function () {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_sub_menu")
-																									.addClass("nd_cc_display_block_important");
-																							})
-																							.mouseleave(function () {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_1 .nd_cc_select_sub_menu")
-																									.removeClass("nd_cc_display_block_important");
-																							});
-
-																					});
-																				</script>
-
-																				<div class="nd_cc_select_content_2_1">
-																					<ul class="nd_cc_select_ul">
-
-																						<li class="nd_cc_select_active">
-																							<img decoding="async"
-																								class="nd_cc_select_arrow"
-																								src="https://www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/nd-projects/addons/cost-calculator/include/down-arrow.png">
-																							<p>Select Option</p>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									Photography</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									Geography</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									English</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									Watercolor</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<ul
-																							class="nd_cc_select_sub_menu">
-																							<li data-position="0"
-																								data-price="0" class="">
-																								<p>Select Option</p>
-																							</li>
-																							<li data-price="2"
-																								data-position="1"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										Photography
-																										<span
-																											class="nd_cc_select_price">2</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																							<li data-price="4"
-																								data-position="2"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										Geography <span
-																											class="nd_cc_select_price">4</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																							<li data-price="1"
-																								data-position="3"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										English <span
-																											class="nd_cc_select_price">1</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																							<li data-price="4"
-																								data-position="4"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										Watercolor <span
-																											class="nd_cc_select_price">4</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																						</ul>
-																					</ul>
-
-
-																					<input
-																						class=" nd_cc_cc_1789_value_price nd_cc_current_price_2_1"
-																						name="nd_cc_current_price_2_1"
-																						type="hidden" readonly
-																						value="0">
-
-
-																				</div>
-																			</div>
-
-																			<div id="nd_cc_sub_section_2_2"
-																				class="nd_cc_sub_section_cc nd_cc_width_100_percentage_important_responsive "
-																				style="width:33%;">
-
-																				<p
-																					class="nd_options_color_greydark nd_cc_sub_section_name">
-																					Type of payment</p>
-
-
-																				<script>
-																					jQuery(function () {
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_sub_menu li ").click(
-																							function () {
-
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_ul li")
-																									.removeClass("nd_cc_select_active");
-																								var nd_cc_select_data_position_first = jQuery(this).attr("data-position");
-																								var nd_cc_select_data_position = parseInt(
-																									nd_cc_select_data_position_first) + 1;
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_ul > li:nth-child(" +
-																									nd_cc_select_data_position + ")").addClass("nd_cc_select_active");
-
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_sub_menu")
-																									.removeClass("nd_cc_display_block_important");
-
-
-																								var nd_cc_select_price = jQuery(this).attr("data-price");
-																								jQuery("#nd_cc_cc_1789 .nd_cc_current_price_2_2").val(nd_cc_select_price);
-																								nd_cc_get_total_price(1789, 10);
-
-
-																							});
-
-																						jQuery(
-																								"#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_ul li.nd_cc_select_active"
-																								)
-																							.click(function () {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_sub_menu")
-																									.addClass("nd_cc_display_block_important");
-																							});
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_ul")
-																							.mouseenter(function () {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_sub_menu")
-																									.addClass("nd_cc_display_block_important");
-																							})
-																							.mouseleave(function () {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_select_content_2_2 .nd_cc_select_sub_menu")
-																									.removeClass("nd_cc_display_block_important");
-																							});
-
-																					});
-																				</script>
-
-																				<div class="nd_cc_select_content_2_2">
-																					<ul class="nd_cc_select_ul">
-
-																						<li class="nd_cc_select_active">
-																							<img decoding="async"
-																								class="nd_cc_select_arrow"
-																								src="https://www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/plugins/nd-projects/addons/cost-calculator/include/down-arrow.png">
-																							<p>Select Option</p>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									Credit card</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									Bank Transfer</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									By hand</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<li class="">
-
-																							<div class="">
-																								<p
-																									class="nd_options_color_greydark nd_cc_select_name">
-																									Paypal</p>
-																								<h5
-																									class="nd_options_color_grey">
-																								</h5>
-																							</div>
-																						</li>
-																						<ul
-																							class="nd_cc_select_sub_menu">
-																							<li data-position="0"
-																								data-price="0" class="">
-																								<p>Select Option</p>
-																							</li>
-																							<li data-price="2"
-																								data-position="1"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										Credit card
-																										<span
-																											class="nd_cc_select_price">2</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																							<li data-price="1"
-																								data-position="2"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										Bank Transfer
-																										<span
-																											class="nd_cc_select_price">1</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																							<li data-price="4"
-																								data-position="3"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										By hand <span
-																											class="nd_cc_select_price">4</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																							<li data-price="6"
-																								data-position="4"
-																								class="">
-
-																								<div class="">
-																									<p
-																										class="nd_options_color_greydark nd_cc_select_name">
-																										Paypal <span
-																											class="nd_cc_select_price">6</span>
-																									</p>
-																									<h5
-																										class="nd_options_color_grey">
-																									</h5>
-																								</div>
-																							</li>
-																						</ul>
-																					</ul>
-
-
-																					<input
-																						class=" nd_cc_cc_1789_value_price nd_cc_current_price_2_2"
-																						name="nd_cc_current_price_2_2"
-																						type="hidden" readonly
-																						value="0">
-
-
-																				</div>
-																			</div>
-
-																			<div id="nd_cc_sub_section_2_3"
-																				class="nd_cc_sub_section_cc nd_cc_width_100_percentage_important_responsive "
-																				style="width:33%;">
-
-																				<p
-																					class="nd_options_color_greydark nd_cc_sub_section_name">
-																					Online Lesson</p>
-
-
-
-																				<script>
-																					jQuery(function () {
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_on").click(function () {
-
-																							var nd_cc_switch_enable = jQuery(
-																									"#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_on ")
-																								.hasClass("nd_cc_switch_active");
-
-																							jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_off")
-																								.removeClass("nd_cc_switch_active");
-																							jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_on")
-																								.addClass("nd_cc_switch_active");
-
-																							jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3").addClass(
-																								"nd_cc_switch_content_active");
-
-																							if (nd_cc_switch_enable == false) {
-																								jQuery("#nd_cc_cc_1789 .nd_cc_current_price_2_3").val(2);
-																								nd_cc_get_total_price(1789, 10);
-																							}
-
-																						});
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_off").click(
-																							function () {
-
-																								var nd_cc_switch_enable = jQuery(
-																										"#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_off ")
-																									.hasClass("nd_cc_switch_active");
-
-																								jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_on")
-																									.removeClass("nd_cc_switch_active");
-																								jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3 .nd_cc_switch_off")
-																									.addClass("nd_cc_switch_active");
-
-																								jQuery("#nd_cc_cc_1789 .nd_cc_switch_content_2_3").removeClass(
-																									"nd_cc_switch_content_active");
-
-																								if (nd_cc_switch_enable == false) {
-																									jQuery("#nd_cc_cc_1789 .nd_cc_current_price_2_3").val(0);
-																									nd_cc_get_total_price(1789, 10);
-																								}
-
-																							});
-
-																					});
-																				</script>
-
-
-																				<div
-																					class="nd_cc_switch_content_2_3 nd_cc_switch_content_1789 ">
-
-																					<div
-																						class="nd_cc_switch_off nd_cc_switch_active nd_cc_width_50_percentage nd_cc_float_left">
-																						<p class="">Not</p>
-																					</div>
-																					<div
-																						class="nd_cc_switch_on nd_cc_width_50_percentage nd_cc_float_left">
-																						<p>Yes</p>
-																					</div>
-
-																					<input
-																						class=" nd_cc_cc_1789_value_price nd_cc_current_price_2_3"
-																						name="nd_cc_current_price_2_3"
-																						type="hidden" readonly
-																						value="0">
-
-																				</div>
-
-
-																			</div>
-
-																		</div>
-
-																		<div id="nd_cc_section_3" style="width:100%;"
-																			class="nd_cc_section_cc">
-
-
-
-
-
-																			<div id="nd_cc_sub_section_3_1"
-																				class="nd_cc_sub_section_cc nd_cc_width_100_percentage_important_responsive "
-																				style="width:100%;">
-
-																				<p
-																					class="nd_options_color_greydark nd_cc_sub_section_name">
-																					Additional Activities</p>
-
-
-																				<script>
-																					jQuery(function () {
-
-																						jQuery("#nd_cc_cc_1789 .nd_cc_tag_content_3_1 .nd_cc_tag_default").click(function () {
-
-																							var nd_cc_current_tag_price = jQuery(
-																								"#nd_cc_cc_1789 .nd_cc_current_price_3_1").val();
-																							var nd_cc_tag_multi_price = jQuery(this).attr("data-price");
-
-																							if (jQuery(this).hasClass("nd_cc_tag_active")) {
-																								jQuery(this).removeClass("nd_cc_tag_active");
-																								var nd_cc_final_tag_price = parseInt(nd_cc_current_tag_price) -
-																									parseInt(nd_cc_tag_multi_price);
-																							} else {
-																								jQuery(this).addClass("nd_cc_tag_active");
-																								var nd_cc_final_tag_price = parseInt(nd_cc_current_tag_price) +
-																									parseInt(nd_cc_tag_multi_price);
-																							}
-
-																							jQuery("#nd_cc_cc_1789 .nd_cc_current_price_3_1").val(
-																								nd_cc_final_tag_price);
-
-																							nd_cc_get_total_price(1789, 10);
-
-																						});
-
-																					});
-																				</script>
-																				<div class="nd_cc_tag_content_3_1"><a
-																						data-price="3"
-																						class="nd_cc_tag_default">Gymnastics
-																						<span
-																							class="nd_cc_tag_price">3</span></a><a
-																						data-price="2"
-																						class="nd_cc_tag_default">Chemistry
-																						<span
-																							class="nd_cc_tag_price">2</span></a><a
-																						data-price="1"
-																						class="nd_cc_tag_default">Reading
-																						<span
-																							class="nd_cc_tag_price">1</span></a><a
-																						data-price="3"
-																						class="nd_cc_tag_default">Translation
-																						<span
-																							class="nd_cc_tag_price">3</span></a>
-
-																					<input
-																						class=" nd_cc_cc_1789_value_price nd_cc_current_price_3_1"
-																						name="nd_cc_current_price_3_1"
-																						type="hidden" readonly
-																						value="0">
-
-																				</div>
-																			</div>
-
-																		</div>
-
-																		<div id="nd_cc_section_price_1789"
-																			class="nd_cc_section_price nd_cc_text_align_left_important_responsive ">
-
-																			<h1>
-																				<span>$ </span>
-																				<span
-																					class="nd_cc_cc_total_price">0</span>
-																			</h1>
-
-																			<h3></h3>
-																			<p>RECOMMENDED</p>
-
-
-
-																			<img decoding="async"
-																				class="nd_cc_cc_icon_price nd_cc_display_none_responsive"
-																				src="http://www.nicdark-themes.com/themes/children/wp/demo/education/wp-content/uploads/sites/2/2021/09/img-01.png">
-
-
-
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-43eb22a"
-													data-id="43eb22a" data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<div class="elementor-element elementor-element-a9d6db9 elementor-widget elementor-widget-heading"
-															data-id="a9d6db9" data-element_type="widget"
-															data-widget_type="heading.default">
-															<div class="elementor-widget-container">
-																<h3
-																	class="elementor-heading-title elementor-size-default">
-																	Frequent Questions</h3>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-e44a2e1 elementor-widget elementor-widget-heading"
-															data-id="e44a2e1" data-element_type="widget"
-															data-widget_type="heading.default">
-															<div class="elementor-widget-container">
-																<p
-																	class="elementor-heading-title elementor-size-default">
-																	Vestibulum ante ipsum primis in faucibus orci luctus
-																	et ultrices posuere cubilia curae. Phasel rhoncus,
-																	<u>purus et consect etur volutpat</u>, turpis eros
-																	sodales orci, vel vulputate.
-																</p>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-bfe879e elementor-widget elementor-widget-toggle"
-															data-id="bfe879e" data-element_type="widget"
-															data-widget_type="toggle.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-toggle">
-																	<div class="elementor-toggle-item">
-																		<div id="elementor-tab-title-2011"
-																			class="elementor-tab-title" data-tab="1"
-																			role="button"
-																			aria-controls="elementor-tab-content-2011"
-																			aria-expanded="false">
-																			<span
-																				class="elementor-toggle-icon elementor-toggle-icon-left"
-																				aria-hidden="true">
-																				<span
-																					class="elementor-toggle-icon-closed"><svg
-																						xmlns:dc="http://purl.org/dc/elements/1.1/"
-																						xmlns:cc="http://creativecommons.org/ns#"
-																						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-																						xmlns:svg="http://www.w3.org/2000/svg"
-																						xmlns="http://www.w3.org/2000/svg"
-																						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-																						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-																						height="14"
-																						viewBox="0 0 11.2 11.2"
-																						width="14" id="svg2"
-																						inkscape:version="0.91 r13725"
-																						sodipodi:docname="+red.svg">
-																						<metadata></metadata>
-																						<defs id="defs8"></defs>
-																						<path
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.087964,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.687964,0 5.6,0 Z"
-																							id="path4"
-																							style="fill:#ffffff;fill-opacity:1"
-																							inkscape:connector-curvature="0"
-																							sodipodi:nodetypes="sssss">
-																						</path>
-																						<path
-																							inkscape:connector-curvature="0"
-																							style="fill:#e16c6c;fill-opacity:1;opacity:0.95000001"
-																							id="path4133"
-																							d="M 5.5999999,1e-7 C 2.5120361,1e-7 0,2.5120401 0,5.6000001 0,8.6879601 2.5120361,11.2 5.5999999,11.2 8.6879639,11.2 11.2,8.6879601 11.2,5.6000001 c 0,-3.08796 -2.5120361,-5.6 -5.6000001,-5.6 z m 2.45,6.06664 -1.983362,0 0,1.98336 c 0,0.25763 -0.209008,0.46664 -0.466638,0.46664 -0.257629,0 -0.466638,-0.20901 -0.466638,-0.46664 l 0,-1.98336 -1.9833619,0 c -0.2576294,0 -0.4666382,-0.20901 -0.4666382,-0.46664 0,-0.25763 0.2090088,-0.46664 0.4666382,-0.46664 l 1.9833619,0 0,-1.98336 c 0,-0.25763 0.209009,-0.46664 0.466638,-0.46664 0.25763,0 0.466638,0.20901 0.466638,0.46664 l 0,1.98336 1.983362,0 c 0.25763,0 0.466638,0.20901 0.466638,0.46664 0,0.25763 -0.209008,0.46664 -0.466638,0.46664 z m 0,0">
-																						</path>
-																					</svg></span>
-																				<span
-																					class="elementor-toggle-icon-opened"><svg
-																						xmlns:dc="http://purl.org/dc/elements/1.1/"
-																						xmlns:cc="http://creativecommons.org/ns#"
-																						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-																						xmlns:svg="http://www.w3.org/2000/svg"
-																						xmlns="http://www.w3.org/2000/svg"
-																						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-																						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-																						height="14"
-																						viewBox="0 0 11.2 11.2"
-																						width="14" id="svg2"
-																						inkscape:version="0.91 r13725"
-																						sodipodi:docname="-red.svg">
-																						<metadata></metadata>
-																						<defs id="defs8"></defs>
-																						<path
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.0879639,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.6879639,0 5.6,0 Z"
-																							id="path4"
-																							style="fill:#ffffff;fill-opacity:1"
-																							inkscape:connector-curvature="0"
-																							sodipodi:nodetypes="sssss">
-																						</path>
-																						<path
-																							inkscape:connector-curvature="0"
-																							style="fill:#e16c6c;fill-opacity:1"
-																							id="path4133"
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.0879639,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.6879639,0 5.6,0 Z m 2.45,6.06664 -4.9,0 C 2.8923706,6.06664 2.6833618,5.85763 2.6833618,5.6 2.6833618,5.34237 2.8923706,5.13336 3.15,5.13336 l 4.9,0 c 0.2576294,0 0.4666382,0.20901 0.4666382,0.46664 0,0.25763 -0.2090088,0.46664 -0.4666382,0.46664 z m 0,0">
-																						</path>
-																					</svg></span>
-																			</span>
-																			<a class="elementor-toggle-title"
-																				tabindex="0">Choose the course</a>
-																		</div>
-
-																		<div id="elementor-tab-content-2011"
-																			class="elementor-tab-content elementor-clearfix"
-																			data-tab="1" role="region"
-																			aria-labelledby="elementor-tab-title-2011">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Ut elit tellus, luctus nec
-																			ullamcorper mattis, pulvinar dapibus leo.
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-5d2ebc0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-															data-id="5d2ebc0" data-element_type="widget"
-															data-widget_type="divider.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-divider">
-																	<span class="elementor-divider-separator">
-																	</span>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-9a1368f elementor-widget elementor-widget-toggle"
-															data-id="9a1368f" data-element_type="widget"
-															data-widget_type="toggle.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-toggle">
-																	<div class="elementor-toggle-item">
-																		<div id="elementor-tab-title-1611"
-																			class="elementor-tab-title" data-tab="1"
-																			role="button"
-																			aria-controls="elementor-tab-content-1611"
-																			aria-expanded="false">
-																			<span
-																				class="elementor-toggle-icon elementor-toggle-icon-left"
-																				aria-hidden="true">
-																				<span
-																					class="elementor-toggle-icon-closed"><svg
-																						xmlns:dc="http://purl.org/dc/elements/1.1/"
-																						xmlns:cc="http://creativecommons.org/ns#"
-																						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-																						xmlns:svg="http://www.w3.org/2000/svg"
-																						xmlns="http://www.w3.org/2000/svg"
-																						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-																						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-																						height="14"
-																						viewBox="0 0 11.2 11.2"
-																						width="14" id="svg2"
-																						inkscape:version="0.91 r13725"
-																						sodipodi:docname="+orange.svg">
-																						<metadata></metadata>
-																						<defs id="defs8"></defs>
-																						<path
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.087964,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.687964,0 5.6,0 Z"
-																							id="path4"
-																							style="fill:#ffffff;fill-opacity:1"
-																							inkscape:connector-curvature="0"
-																							sodipodi:nodetypes="sssss">
-																						</path>
-																						<path
-																							inkscape:connector-curvature="0"
-																							style="fill:#ec774b;fill-opacity:1;opacity:0.95000001"
-																							id="path4133"
-																							d="M 5.5999999,1e-7 C 2.5120361,1e-7 0,2.5120401 0,5.6000001 0,8.6879601 2.5120361,11.2 5.5999999,11.2 8.6879639,11.2 11.2,8.6879601 11.2,5.6000001 c 0,-3.08796 -2.5120361,-5.6 -5.6000001,-5.6 z m 2.45,6.06664 -1.983362,0 0,1.98336 c 0,0.25763 -0.209008,0.46664 -0.466638,0.46664 -0.257629,0 -0.466638,-0.20901 -0.466638,-0.46664 l 0,-1.98336 -1.9833619,0 c -0.2576294,0 -0.4666382,-0.20901 -0.4666382,-0.46664 0,-0.25763 0.2090088,-0.46664 0.4666382,-0.46664 l 1.9833619,0 0,-1.98336 c 0,-0.25763 0.209009,-0.46664 0.466638,-0.46664 0.25763,0 0.466638,0.20901 0.466638,0.46664 l 0,1.98336 1.983362,0 c 0.25763,0 0.466638,0.20901 0.466638,0.46664 0,0.25763 -0.209008,0.46664 -0.466638,0.46664 z m 0,0">
-																						</path>
-																					</svg></span>
-																				<span
-																					class="elementor-toggle-icon-opened"><svg
-																						xmlns:dc="http://purl.org/dc/elements/1.1/"
-																						xmlns:cc="http://creativecommons.org/ns#"
-																						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-																						xmlns:svg="http://www.w3.org/2000/svg"
-																						xmlns="http://www.w3.org/2000/svg"
-																						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-																						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-																						height="14"
-																						viewBox="0 0 11.2 11.2"
-																						width="14" id="svg2"
-																						inkscape:version="0.91 r13725"
-																						sodipodi:docname="-orange.svg">
-																						<metadata></metadata>
-																						<defs id="defs8"></defs>
-																						<path
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.0879639,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.6879639,0 5.6,0 Z"
-																							id="path4"
-																							style="fill:#ffffff;fill-opacity:1"
-																							inkscape:connector-curvature="0"
-																							sodipodi:nodetypes="sssss">
-																						</path>
-																						<path
-																							inkscape:connector-curvature="0"
-																							style="fill:#ec774b;fill-opacity:1"
-																							id="path4133"
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.0879639,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.6879639,0 5.6,0 Z m 2.45,6.06664 -4.9,0 C 2.8923706,6.06664 2.6833618,5.85763 2.6833618,5.6 2.6833618,5.34237 2.8923706,5.13336 3.15,5.13336 l 4.9,0 c 0.2576294,0 0.4666382,0.20901 0.4666382,0.46664 0,0.25763 -0.2090088,0.46664 -0.4666382,0.46664 z m 0,0">
-																						</path>
-																					</svg></span>
-																			</span>
-																			<a class="elementor-toggle-title"
-																				tabindex="0">Curriculum of Teachers</a>
-																		</div>
-
-																		<div id="elementor-tab-content-1611"
-																			class="elementor-tab-content elementor-clearfix"
-																			data-tab="1" role="region"
-																			aria-labelledby="elementor-tab-title-1611">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Ut elit tellus, luctus nec
-																			ullamcorper mattis, pulvinar dapibus leo.
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-4431110 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-															data-id="4431110" data-element_type="widget"
-															data-widget_type="divider.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-divider">
-																	<span class="elementor-divider-separator">
-																	</span>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-547f731 elementor-widget elementor-widget-toggle"
-															data-id="547f731" data-element_type="widget"
-															data-widget_type="toggle.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-toggle">
-																	<div class="elementor-toggle-item">
-																		<div id="elementor-tab-title-8861"
-																			class="elementor-tab-title" data-tab="1"
-																			role="button"
-																			aria-controls="elementor-tab-content-8861"
-																			aria-expanded="false">
-																			<span
-																				class="elementor-toggle-icon elementor-toggle-icon-left"
-																				aria-hidden="true">
-																				<span
-																					class="elementor-toggle-icon-closed"><svg
-																						xmlns:dc="http://purl.org/dc/elements/1.1/"
-																						xmlns:cc="http://creativecommons.org/ns#"
-																						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-																						xmlns:svg="http://www.w3.org/2000/svg"
-																						xmlns="http://www.w3.org/2000/svg"
-																						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-																						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-																						height="14"
-																						viewBox="0 0 11.2 11.2"
-																						width="14" id="svg2"
-																						inkscape:version="0.91 r13725"
-																						sodipodi:docname="+yellow.svg">
-																						<metadata></metadata>
-																						<defs id="defs8"></defs>
-																						<path
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.087964,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.687964,0 5.6,0 Z"
-																							id="path4"
-																							style="fill:#ffffff;fill-opacity:1"
-																							inkscape:connector-curvature="0"
-																							sodipodi:nodetypes="sssss">
-																						</path>
-																						<path
-																							inkscape:connector-curvature="0"
-																							style="fill:#edbf47;fill-opacity:1;opacity:0.95000001"
-																							id="path4133"
-																							d="M 5.5999999,1e-7 C 2.5120361,1e-7 0,2.5120401 0,5.6000001 0,8.6879601 2.5120361,11.2 5.5999999,11.2 8.6879639,11.2 11.2,8.6879601 11.2,5.6000001 c 0,-3.08796 -2.5120361,-5.6 -5.6000001,-5.6 z m 2.45,6.06664 -1.983362,0 0,1.98336 c 0,0.25763 -0.209008,0.46664 -0.466638,0.46664 -0.257629,0 -0.466638,-0.20901 -0.466638,-0.46664 l 0,-1.98336 -1.9833619,0 c -0.2576294,0 -0.4666382,-0.20901 -0.4666382,-0.46664 0,-0.25763 0.2090088,-0.46664 0.4666382,-0.46664 l 1.9833619,0 0,-1.98336 c 0,-0.25763 0.209009,-0.46664 0.466638,-0.46664 0.25763,0 0.466638,0.20901 0.466638,0.46664 l 0,1.98336 1.983362,0 c 0.25763,0 0.466638,0.20901 0.466638,0.46664 0,0.25763 -0.209008,0.46664 -0.466638,0.46664 z m 0,0">
-																						</path>
-																					</svg></span>
-																				<span
-																					class="elementor-toggle-icon-opened"><svg
-																						xmlns:dc="http://purl.org/dc/elements/1.1/"
-																						xmlns:cc="http://creativecommons.org/ns#"
-																						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-																						xmlns:svg="http://www.w3.org/2000/svg"
-																						xmlns="http://www.w3.org/2000/svg"
-																						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-																						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-																						height="14"
-																						viewBox="0 0 11.2 11.2"
-																						width="14" id="svg2"
-																						inkscape:version="0.91 r13725"
-																						sodipodi:docname="-yellow.svg">
-																						<metadata></metadata>
-																						<defs id="defs8"></defs>
-																						<path
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.0879639,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.6879639,0 5.6,0 Z"
-																							id="path4"
-																							style="fill:#ffffff;fill-opacity:1"
-																							inkscape:connector-curvature="0"
-																							sodipodi:nodetypes="sssss">
-																						</path>
-																						<path
-																							inkscape:connector-curvature="0"
-																							style="fill:#edbf47;fill-opacity:1"
-																							id="path4133"
-																							d="M 5.6,0 C 2.5120361,0 0,2.51204 0,5.6 c 0,3.08796 2.5120361,5.6 5.6,5.6 3.0879639,0 5.6,-2.51204 5.6,-5.6 C 11.2,2.51204 8.6879639,0 5.6,0 Z m 2.45,6.06664 -4.9,0 C 2.8923706,6.06664 2.6833618,5.85763 2.6833618,5.6 2.6833618,5.34237 2.8923706,5.13336 3.15,5.13336 l 4.9,0 c 0.2576294,0 0.4666382,0.20901 0.4666382,0.46664 0,0.25763 -0.2090088,0.46664 -0.4666382,0.46664 z m 0,0">
-																						</path>
-																					</svg></span>
-																			</span>
-																			<a class="elementor-toggle-title"
-																				tabindex="0">How we work</a>
-																		</div>
-
-																		<div id="elementor-tab-content-8861"
-																			class="elementor-tab-content elementor-clearfix"
-																			data-tab="1" role="region"
-																			aria-labelledby="elementor-tab-title-8861">
-																			Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Ut elit tellus, luctus nec
-																			ullamcorper mattis, pulvinar dapibus leo.
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-element elementor-element-f0958fc elementor-align-justify elementor-widget elementor-widget-button"
-															data-id="f0958fc" data-element_type="widget"
-															data-widget_type="button.default">
-															<div class="elementor-widget-container">
-																<div class="elementor-button-wrapper">
-																	<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
-																		href="#">
-																		<span class="elementor-button-content-wrapper">
-																			<span class="elementor-button-text">MORE
-																				INFO</span>
-																		</span>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</section>
-										<div class="elementor-element elementor-element-9833387 elementor-widget elementor-widget-customcss"
-											data-id="9833387" data-element_type="widget"
-											data-widget_type="customcss.default">
-											<div class="elementor-widget-container">
-												<style type="text/css">
-													#nd_cc_section_1,
-													#nd_cc_section_2,
-													#nd_cc_section_3 {
-														margin-bottom: 0;
-													}
-
-													.nd_cc_sub_section_name {
-														font-family: 'Montserrat';
-														font-weight: bold;
-														letter-spacing: 1px;
-													}
-
-													.nd_cc_section_price h1 {
-														font-weight: bold;
-													}
-
-													.nd_cc_sub_section_cc,
-													.nd_cc_section_price {
-														margin-bottom: 0px !important;
-													}
-												</style>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
 						<section
 							class="elementor-section elementor-top-section elementor-element elementor-element-55114546 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 							data-id="55114546" data-element_type="section"
@@ -8840,14 +6844,14 @@
 											data-id="0a49c38" data-element_type="widget"
 											data-widget_type="heading.default">
 											<div class="elementor-widget-container">
-												<h3 class="elementor-heading-title elementor-size-default">{{ settings_id.title_online_lessons }}</h3>
+												<h3 class="elementor-heading-title elementor-size-default">{{settings_id.title_online_lessons }}</h3>
 											</div>
 										</div>
 										<div class="elementor-element elementor-element-3a42332b elementor-widget elementor-widget-heading"
 											data-id="3a42332b" data-element_type="widget"
 											data-widget_type="heading.default">
 											<div class="elementor-widget-container">
-												<h1 class="elementor-heading-title elementor-size-default">{{ settings_id.title_Education }}</h1>
+												<h1 class="elementor-heading-title elementor-size-default">{{settings_id.title_Education }}</h1>
 											</div>
 										</div>
 										<section
@@ -8880,7 +6884,7 @@
 																			<div class="nd_elements_float_left nd_elements_width_100_percentage_iphone_important"
 																				style="width:80%">
 																				<h4><span
-																						class="nd_elements_list_component_title">{{ offers.title }}</span>
+																						class="nd_elements_list_component_title">{{offers.title }}</span>
 																				</h4>
 																			</div>
 
@@ -8925,7 +6929,7 @@
 															</div>
 														</div>
 														{% endfor %}
-														
+
 													</div>
 												</div>
 												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-630a3733"
@@ -8954,7 +6958,7 @@
 																			<div class="nd_elements_float_left nd_elements_width_100_percentage_iphone_important"
 																				style="width:80%">
 																				<h4><span
-																						class="nd_elements_list_component_title">{{ offers.title }}</span>
+																						class="nd_elements_list_component_title">{{offers.title }}</span>
 																				</h4>
 																			</div>
 
@@ -9007,11 +7011,11 @@
 								</div>
 							</div>
 						</section>
-						<section
-							class="elementor-section elementor-top-section elementor-element elementor-element-43344b37
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-43344b37
 							 elementor-section-content-middle elementor-section-boxed elementor-section-height-default
-							  elementor-section-height-default elementor-invisible" style="background-image: url({{ settings_id.image7.url }});"
-							data-id="43344b37" data-element_type="section"
+							  elementor-section-height-default elementor-invisible"
+							style="background-image: url({{ settings_id.image7.url }});" data-id="43344b37"
+							data-element_type="section"
 							data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
@@ -9076,7 +7080,7 @@
 											<div class="elementor-widget-container">
 												<div class="elementor-button-wrapper">
 													<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-bounce-in"
-														href="#">
+														href="{% url 'about' %}">
 														<span class="elementor-button-content-wrapper">
 															<span class="elementor-button-text">MORE INFO</span>
 														</span>

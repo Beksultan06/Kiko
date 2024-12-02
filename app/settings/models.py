@@ -107,6 +107,54 @@ class Settings(models.Model):
     class Meta:
         verbose_name_plural = 'Настройки Главной страницы'
 
+class GalleryIndex(models.Model):
+    image1 = models.ImageField(
+        upload_to='settings',
+        verbose_name='Фото 1'
+    )
+    image2 = models.ImageField(
+        upload_to='settings',
+        verbose_name='Фото 2'
+    )
+    image3 = models.ImageField(
+        upload_to='settings',
+        verbose_name='Фото 3'
+    )
+    image4 = models.ImageField(
+        upload_to='settings',
+        verbose_name='Фото 4'
+    )
+    title = models.CharField(
+        max_length=155,
+        verbose_name='Заголовка'
+    )
+    title2 = models.CharField(
+        max_length=155,
+        verbose_name='Заголовка 2'
+    )
+    descriptions = RichTextField(
+        verbose_name='Описание'
+    )
+    title2_2 = models.CharField(
+        max_length=155,
+        verbose_name='Заголовка'
+    )
+    title2_1 = models.CharField(
+        max_length=155,
+        verbose_name='Заголовка 2'
+    )
+    descriptions2 = RichTextField(
+        verbose_name='Описание 2'
+    )
+
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name_plural = 'Галлерия на Главной странице'
+
+
 class Image(models.Model):
     image1 = models.ImageField(
         upload_to='image',
@@ -150,7 +198,7 @@ class PriceKiko(models.Model):
     price = models.IntegerField(
         verbose_name='Цена'
     )
-    imgae = models.ImageField(
+    image = models.ImageField(
         upload_to='price_kiko/',
         verbose_name='Фото',
         blank=True, null=True
