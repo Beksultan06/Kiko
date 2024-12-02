@@ -223,3 +223,40 @@ CACHES = {
 # celery
 CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Правильный URL для брокера
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  # Правильный URL для хранилища
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://9fab-158-181-248-104.ngrok-free.app",  # ваш ngrok-URL
+]
+
+# Разрешить определённые методы
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+# Разрешить определённые заголовки
+CORS_ALLOW_HEADERS = [
+    "content-disposition",
+    "accept-encoding",
+    "content-type",
+    "accept",
+    "origin",
+    "Authorization",
+    "access-control-allow-methods",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://9fab-158-181-248-104.ngrok-free.app",  # ваш ngrok-URL
+]
+
+
+ALLOWED_HOSTS = [
+    "9fab-158-181-248-104.ngrok-free.app",  # добавьте ваш ngrok-URL сюда
+    "localhost",  # для локальных запросов
+    "127.0.0.1",  # для локальных запросов
+]
